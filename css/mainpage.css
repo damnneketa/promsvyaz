@@ -1,0 +1,375 @@
+
+#banner{
+    width: 1140px;
+    height: 450px;
+    background-image: url(../img/banner1.png);
+    background-size: cover;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#banner > *{
+    margin-left: 50px;
+}
+#banner > h2{
+    color: white;
+}
+#banner > span{
+    color: white;
+}
+#button_listservices{
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(1, 1, 1, 0);
+    transition: transform 0.3s;
+}
+#button_listservices:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;   
+}
+#button_listservices span{
+    font-size: 20px;
+    color: white;
+}
+#about_company{
+    width: 1040px;
+    text-align: center;
+}
+#about_company div{
+    display: flex;
+}
+.ac_collumns{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+}
+.ac_collumns div{
+    flex-direction: column;
+    font-size: 32px;
+    height: 150px;
+}
+#our_production{
+    width: 1140px;
+    height: 475px;
+    background-color: white;
+}
+#button_listproduction{
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(1, 1, 1, 0);
+    border: 2px solid #090C43;
+    transition: transform 0.3s;
+}
+#button_listproduction:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;   
+}
+#button_listproduction span{
+    font-size: 20px;
+}
+#op_header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 28px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+#op_header h2{
+    width: 250px;
+}
+#op_cards{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+.op_cards{
+    width: 220px;
+    height: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.op_cards:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+.op_cards span{
+    font-size: 20px;
+    padding: 15px;
+}
+.op_cards img{
+    align-self: flex-start;
+    width: 190px;
+    height: 150px;
+}
+#features_production{
+    width: 1140px;
+    height: 450px;
+    background-color: #1A21BD;   
+}
+#fp_header{
+    margin-top: 35px;
+    text-align: center;
+}
+#fp_header h2{
+    color: white;
+}
+#fp_cards{
+    width: 1040px;
+    height: 290px;
+    margin-top: 30px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.fp_cards{
+    width: 300px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    transition: color 0.3s;
+}
+.fp_cards:hover > *{
+    color: #1A21BD;
+    transition: color 0.5s;
+}
+.fp_cards span{
+    color: #090C43;
+    font-size: 24px;
+}
+.fp_cards span{
+    margin-top: 60px;
+}
+.fp_cards a{
+    color: #090C43;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.fp_cards > *{
+    margin-left: 21px;
+}
+@media only screen and (max-width: 1200px) {
+
+    section{
+        width: 70%;
+    }
+    #banner{
+        width: 80%;
+    }
+    #about_company{
+        width: 80%;
+    }
+    #our_production{
+        width: 80%;
+    }
+    #features_production{
+        width: 80%;
+    }
+    .op_cards{
+        width: 20%;
+    }
+    .op_cards > span{
+        font-size: 16px;
+    }
+    .op_cards > img{
+        width: 90%;
+        height: 50%;
+    }
+    #fp_cards{
+        width: 85%;
+    }
+    .fp_cards{
+        width: 30%;
+        height: 240px;
+    }
+    .fp_cards > *{
+        margin-left: 10px;
+    }
+    .fp_cards > h2{
+        font-size: 36px;
+    }
+    .fp_cards > span{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 800px) {
+
+    section{
+        width: 70%;
+    }
+    #banner{
+        width: 80%;
+    }
+    #about_company{
+        width: 80%;
+    }
+    .ac_collumns > div > *{
+        font-size: 30px;
+    }
+    #about_company > h2{
+        font-size: 34px;
+    }
+    #our_production{
+        width: 80%;
+        height: 730px;
+    }
+    #op_header > h2{
+        font-size: 34px;
+    }
+    #button_listproduction{
+        width: 200px;
+        height: 40px;
+    }
+    #button_listproduction > span{
+        font-size: 16px;
+    }
+    #op_cards{
+        height: 570px;
+        width: 500px;
+        flex-wrap: wrap;
+    }
+    .op_cards{
+        width: 200px;
+    }
+    .op_cards > span{
+        font-size: 16px;
+    }
+    .op_cards > img{
+        width: 90%;
+        height: 50%;
+    }
+    #features_production{
+        width: 80%;
+        height: 560px;
+    }
+    #fp_header > h2{
+        font-size: 34px;
+    }
+    #fp_cards{
+        width: 85%;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    .fp_cards{
+        margin-top: 10px;
+        width: 415px;
+    }
+    .fp_cards > h2{
+        margin-left: 10px;
+        font-size: 34px;
+    }
+    .fp_cards > span{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+}
+@media only screen and (max-width: 400px) {
+
+    section{
+        width: 100%;
+    }
+    #banner{
+        width: 100%;
+    }
+    #banner > *{
+        font-size: 34px;   
+    }
+    #about_company{
+        width: 100%;
+    }
+    #about_company > h2{
+        font-size: 34px;
+    }
+    #about_company > div{
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;    
+    }
+    .ac_collumns{
+        margin-top: 0px;
+    }
+    .ac_collumns > div{
+        justify-content: center;
+    }
+    .ac_collumns > div > *{
+        font-size: 30px;
+    }
+    
+    #our_production{
+        width: 100%;
+        height: 1320px;
+    }
+    #op_header{
+        flex-direction: column;
+        height: 150px;
+    }
+    #op_header > h2{
+        font-size: 34px;
+    }
+    #button_listproduction{
+        width: 200px;
+        height: 40px;
+    }
+    #button_listproduction > span{
+        font-size: 16px;
+    }
+    #op_cards{
+        height: 1070px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .op_cards{
+        width: 300px;
+    }
+    .op_cards > span{
+        font-size: 16px;
+    }
+    .op_cards > img{
+        width: 75%;
+        height: 50%;
+    }
+    #features_production{
+        width: 100%;
+        height: 560px;
+    }
+    #fp_header > h2{
+        font-size: 32 px;
+    }
+    #fp_cards{
+        width: 98%;
+        flex-direction: column;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    .fp_cards{
+        margin-top: 10px;
+        width: 99%;
+    }
+    .fp_cards > h2{
+        margin-top: 8px;
+        margin-left: 10px;
+        font-size: 34px;
+    }
+    .fp_cards > span{
+        margin-top: 8px;
+        font-size: 18px;
+    }
+
+}

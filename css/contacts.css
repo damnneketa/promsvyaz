@@ -1,0 +1,52 @@
+#contacts{
+    height: 700px;
+}
+#info{
+    align-self: center;
+}
+#info_row{
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    margin-top: 30px;
+}
+.info > span{
+    font-size: 24px;
+}
+#map{
+    margin-top: 30px;
+    align-self: center;
+    width: 1010px;
+    height: 300px;
+}
+@media only screen and (max-width: 1200px) {
+    #contacts{
+        width: 100%;
+    }
+    #info{
+        width: 90%;
+    }
+    #map{
+        width: 90%;
+    }
+    #map > *{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #contacts h2{
+        font-size: 32px;
+    }
+    #info{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #info_row{
+        flex-wrap: wrap;
+    }   
+    #contacts{
+        height: 750px;
+    } 
+}

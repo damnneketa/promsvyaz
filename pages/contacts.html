@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/contacts.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b6d33f1d-daee-4483-9f51-c7c2c040e5fc&lang=ru_RU"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [56.4949970472346,39.67705222360581],
+                zoom: 18
+            });
+            var myPlacemark = new ymaps.Placemark([56.495003352730684,39.67700528494807]);
+            myMap.geoObjects.add(myPlacemark)
+        }
+    </script>
+    <title>Контакты</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="../index.html"><img src="../img/logo.png" alt="Logo"></a>
+            <nav>
+                <a href="../pages/about_us.html">О НАС</a>
+                <a href="../pages/production.html">ПРОДУКЦИЯ</a>
+                <a href="../pages/services.html">УСЛУГИ</a>
+                <a href="../pages/contacts.css">КОНТАКТЫ</a>                
+            </nav>
+        </div>
+    </header>  
+    <main>
+        <section id="contacts" class="blocks base_block">
+            <h2 class="blue">КОНТАКТЫ</h2>
+            <div id="info">
+                <div id="info_row">
+                    <div class="info">
+                        <h2 class="darkblue">E-mail</h2>
+                        <span class="text">market@yps.ru</span>
+                    </div>
+                    <div class="info">
+                        <h2 class="darkblue">Телефон/факс</h2>
+                        <span class="text">(49246) 2-27-96, 2-20-04</span>
+                    </div>
+                </div>
+                <div class="info">
+                    <h2 class="darkblue">Адрес</h2>
+                    <span class="text">601800, г. Юрьев-Польский, Владимирская обл., ул. Набережная 80</span>
+                </div>
+            </div>
+            <div id="map"></div>
+        </section>
+    </main>
+    <footer>
+        <img src="../img/logo.png" alt="logo">
+        <nav id="footer_nav">
+            <div class="footer_collumn">
+                <a href="../pages/about_us.html">О НАС</a>
+                <a href="../pages/production.html">ПРОДУКЦИЯ</a>
+            </div>
+            <div class="footer_collumn">
+                <a href="../pages/services.html">УСЛУГИ</a>
+                <a href="../pages/contacts.html">КОНТАКТЫ</a>    
+            </div>            
+        </nav>
+        <div id="footer_info" class="footer_collumn">
+            <span class="text">(49246) 2-27-96, 2-20-04</span>
+            <span class="text">market@yps.ru</span>
+        </div>
+    </footer>
+</body>
+</html>
